@@ -435,7 +435,8 @@ a {
 }
 .chat__bottom {
   font-size: 15px;
-  color: #363636;
+  color: #444444;
+  font-weight: 600;
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
