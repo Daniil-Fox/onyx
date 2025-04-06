@@ -1,0 +1,92 @@
+.form {
+  padding: 20px 25px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  &__area {
+    display: block;
+    margin-bottom: 10px;
+    background: none;
+    width: 100%;
+    height: 60px;
+    resize: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    &::-webkit-scrollbar {
+      width: 13px;
+      border-radius: 13px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #262626;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #545454;
+      border-radius: 13px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__model,
+  &__btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: inset 0 0 4px #fff;
+    border-radius: 15px;
+
+    padding: 10px 15px;
+    line-height: 1;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__file {
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 26px;
+    height: 21px;
+    background-image: url("./../img/file.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.model {
+  cursor: pointer;
+  &__arrow {
+    color: #7a7a7a;
+    margin-right: 8px;
+  }
+  &__cost {
+    position: relative;
+    padding-left: 22px;
+    margin-left: 13px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 25px;
+      height: 28px;
+      background-image: url("./../img/stars.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
