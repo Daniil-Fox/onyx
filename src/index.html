@@ -7,6 +7,7 @@
       <div class="app">
         @include('partials/header.html')
         <main class="main">
+          @include('partials/modal.html')
           <section class="chat">
             <div class="chat__wrapper">
               <div class="chat__body" data-simplebar>
@@ -194,7 +195,7 @@
                     id="form-file"
                   />
                   <label for="form-file" class="form__file"> </label>
-                  <div class="form__model model">
+                  <div class="form__model model" id="modal-button">
                     <span class="model__arrow">▼</span>
                     <span class="model__type">DeepSeek (R1)</span>
                     <span class="model__cost">5</span>

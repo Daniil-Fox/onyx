@@ -12652,6 +12652,24 @@ document.addEventListener("gesturestart", function (event) {
 document.addEventListener("dragstart", function (event) {
   event.preventDefault();
 });
+const deepseekButton = document.getElementById("modal-button");
+const modal = document.getElementById("modal");
+const modelOptions = document.querySelectorAll(".model-option");
+const closeModal = document.getElementById("close-modal");
+deepseekButton.addEventListener("click", () => {
+  modal.classList.add("active");
+});
+modal.addEventListener("click", e => e.stopPropagation());
+modelOptions.forEach(option => {
+  option.addEventListener("click", event => {
+    const selectedModel = event.target.dataset.model;
+    deepseekButton.querySelector(".model__type").textContent = selectedModel;
+    modal.classList.remove("active");
+  });
+});
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("active");
+});
 })();
 
 /******/ })()
