@@ -12511,13 +12511,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
 
 
-swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation]);
+swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Grid]);
 new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(".header__slider", {
-  slidesPerView: 1,
+  slidesPerView: 2,
   spaceBetween: 20,
   navigation: {
     prevEl: ".control__btn--prev",
     nextEl: ".control__btn--next"
+  },
+  grid: {
+    fill: "row",
+    rows: 2
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    1201: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    }
   }
 });
 
