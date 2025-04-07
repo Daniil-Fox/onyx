@@ -29,7 +29,7 @@
     height: 30px;
     border-radius: 100%;
     background-color: #3c3b3b;
-
+    user-select: none;
     background-image: url("./../img/reload.png");
     background-size: 60%;
     background-position: center;
@@ -167,6 +167,7 @@
     border-radius: 100%;
     background-color: #3c3b3b;
     transition: background-color 0.3s ease-in;
+    user-select: none;
     @include hover {
       background-color: #5a5a5a;
     }
@@ -194,7 +195,7 @@
     font-size: 15px;
     color: #fff;
     line-height: 1;
-
+    user-select: none;
     @include mobile {
       font-size: 13px;
       flex-direction: column;
@@ -211,6 +212,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    user-select: none;
     @include mobile {
       background: none;
       width: auto;
@@ -235,6 +237,8 @@
     max-width: 300px;
     border-radius: 100%;
     background-color: #000;
+    user-select: none;
+    pointer-events: none;
     @media (max-width: 1200px) {
       max-width: 190px;
     }
@@ -255,6 +259,8 @@
     color: #fff;
     font-size: 29px;
     line-height: 1;
+    user-select: none;
+    pointer-events: none;
     span {
       font-weight: 600;
     }
@@ -278,6 +284,7 @@
   position: relative;
   padding: 2px;
   line-height: 1;
+  user-select: none;
   @include mobile {
     max-width: 13.5rem;
     height: 3.3rem;
@@ -303,6 +310,7 @@
   }
   &__val {
     font-size: 15px;
+    user-select: none;
     @include mobile {
       font-size: 1.8rem;
     }
@@ -332,6 +340,7 @@
 }
 
 .chats {
+  user-select: none;
   &__item {
     height: 100%;
     counter-increment: counter;

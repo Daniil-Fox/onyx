@@ -12535,9 +12535,14 @@ const params = {
   }
 };
 let headerSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(".header__slider", params);
+const parent = document.querySelector(".header__slider > .swiper-wrapper");
+const items = parent.children;
 if (window.matchMedia("(max-width: 900px)").matches) {
   headerSlider.destroy();
+  parent.style.maxHeight = items[0].offsetHeight + items[1].offsetHeight + 10 + "px";
+  console.log(parent);
 } else {
+  parent.style.maxHeight = null;
   headerSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(".header__slider", params);
 }
 
@@ -12628,12 +12633,25 @@ const bottomForm = document.querySelector(".form");
 const chatBottom = document.querySelector(".chat__bottom");
 const mainChat = document.querySelector(".chat__body");
 function checkResize() {
-  mainChat.style.maxHeight = window.innerHeight - header.offsetHeight - bottomForm.offsetHeight - chatBottom.offsetHeight - 90 + "px";
+  mainChat.style.maxHeight = window.innerHeight - header.offsetHeight - bottomForm.offsetHeight - 40 + "px";
 }
+header.addEventListener("contextmenu", e => e.preventDefault());
+document.addEventListener("contextmenu", e => e.preventDefault());
+mainChat.addEventListener("contextmenu", e => e.stopPropagation());
+document.addEventListener("copy", function (event) {
+  event.preventDefault();
+});
+mainChat.addEventListener("copy", e => e.stopPropagation());
 if (window.matchMedia("(max-width: 900px)").matches) {
   checkResize();
   window.addEventListener("resize", checkResize);
 }
+document.addEventListener("gesturestart", function (event) {
+  event.preventDefault();
+});
+document.addEventListener("dragstart", function (event) {
+  event.preventDefault();
+});
 })();
 
 /******/ })()

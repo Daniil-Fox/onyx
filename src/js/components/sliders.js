@@ -27,9 +27,15 @@ const params = {
 };
 
 let headerSlider = new Swiper(".header__slider", params);
+const parent = document.querySelector(".header__slider > .swiper-wrapper");
 
+const items = parent.children;
 if (window.matchMedia("(max-width: 900px)").matches) {
   headerSlider.destroy();
+  parent.style.maxHeight =
+    items[0].offsetHeight + items[1].offsetHeight + 10 + "px";
+  console.log(parent);
 } else {
+  parent.style.maxHeight = null;
   headerSlider = new Swiper(".header__slider", params);
 }

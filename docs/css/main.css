@@ -68,6 +68,8 @@
   font-size: 16px;
   background-color: #000;
   color: #fff;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 img {
@@ -80,6 +82,10 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img {
+  pointer-events: none;
 }
 
 .site-container {
@@ -208,6 +214,10 @@ a {
   height: 30px;
   border-radius: 100%;
   background-color: #3c3b3b;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-image: url("./../img/reload.png");
   background-size: 60%;
   background-position: center;
@@ -388,6 +398,10 @@ a {
   background-color: #3c3b3b;
   -webkit-transition: background-color 0.3s ease-in;
   transition: background-color 0.3s ease-in;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media (any-hover: hover) {
   .header__plus:hover {
@@ -424,6 +438,10 @@ a {
   font-size: 15px;
   color: #fff;
   line-height: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media (max-width: 650px) {
   .header__text {
@@ -448,6 +466,10 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media (max-width: 650px) {
   .header__logout {
@@ -482,6 +504,11 @@ a {
   max-width: 300px;
   border-radius: 100%;
   background-color: #000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
 @media (max-width: 1200px) {
   .header__img {
@@ -508,6 +535,11 @@ a {
   color: #fff;
   font-size: 29px;
   line-height: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
 .header__logo span {
   font-weight: 600;
@@ -539,6 +571,10 @@ a {
   position: relative;
   padding: 2px;
   line-height: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media (max-width: 650px) {
   .counter {
@@ -569,6 +605,10 @@ a {
 }
 .counter__val {
   font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media (max-width: 650px) {
   .counter__val {
@@ -609,6 +649,12 @@ a {
   }
 }
 
+.chats {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .chats__item {
   height: 100%;
   counter-increment: counter;
@@ -762,6 +808,10 @@ a {
   }
 }
 .chat__bottom {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-size: 15px;
   color: #444444;
   font-weight: 600;
@@ -891,6 +941,11 @@ a {
   -webkit-box-shadow: inset 0 0 24px rgba(39, 95, 163, 0.3764705882);
   box-shadow: inset 0 0 24px rgba(39, 95, 163, 0.3764705882);
 }
+.chat__item--response .chat__ava {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
 .chat__control {
   position: absolute;
   bottom: calc(100% + 10px);
@@ -921,6 +976,10 @@ a {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media (max-width: 650px) {
   .chat__btn {
@@ -939,14 +998,15 @@ a {
   height: 30px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media (max-width: 650px) {
   .chat__ava {
-    width: 4rem;
-    height: 4rem;
-    -webkit-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    transform: scale(1.4);
+    width: 5rem;
+    height: 5rem;
   }
 }
 .chat__ava img {
@@ -1015,6 +1075,10 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1081,6 +1145,10 @@ a {
   transition: -webkit-filter 0.3s ease-in;
   transition: filter 0.3s ease-in;
   transition: filter 0.3s ease-in, -webkit-filter 0.3s ease-in;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media (any-hover: hover) {
   .form__file:hover {

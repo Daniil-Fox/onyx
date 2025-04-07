@@ -11,12 +11,26 @@ function checkResize() {
     window.innerHeight -
     header.offsetHeight -
     bottomForm.offsetHeight -
-    chatBottom.offsetHeight -
-    90 +
+    40 +
     "px";
 }
 
+header.addEventListener("contextmenu", (e) => e.preventDefault());
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+mainChat.addEventListener("contextmenu", (e) => e.stopPropagation());
+
+document.addEventListener("copy", function (event) {
+  event.preventDefault();
+});
+mainChat.addEventListener("copy", (e) => e.stopPropagation());
 if (window.matchMedia("(max-width: 900px)").matches) {
   checkResize();
+
   window.addEventListener("resize", checkResize);
 }
+document.addEventListener("gesturestart", function (event) {
+  event.preventDefault();
+});
+document.addEventListener("dragstart", function (event) {
+  event.preventDefault();
+});
