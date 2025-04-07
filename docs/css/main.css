@@ -571,7 +571,7 @@ a {
 }
 @media (max-width: 650px) {
   .counter__val {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 .counter__btn {
