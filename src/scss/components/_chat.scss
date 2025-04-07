@@ -13,7 +13,8 @@
     text-align: center;
     @include mobile {
       flex-shrink: 0;
-      font-size: 1.5rem;
+      max-width: 90%;
+      font-size: 12px;
     }
     p {
       margin: 0;
@@ -33,7 +34,7 @@
       border-radius: 2rem;
       border-width: 3px;
     }
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       z-index: 1;
@@ -44,9 +45,9 @@
       pointer-events: none;
       background: linear-gradient(to bottom, #000 50%, transparent);
       @include mobile {
-        height: 5rem;
-        left: -2px;
-        right: -2px;
+        height: 7rem;
+        left: -1rem;
+        right: -1rem;
       }
     }
   }
@@ -78,6 +79,10 @@
       background-color: #262626;
       width: 13px;
       border-radius: 20px;
+
+      @include mobile {
+        width: 9px;
+      }
     }
     .simplebar-scrollbar {
       &::before {
@@ -138,8 +143,8 @@
     background-position: center;
     background-repeat: no-repeat;
     @include mobile {
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 2rem;
+      height: 2rem;
     }
     &--copy {
       background-image: url("./../img/copy.png");
@@ -153,8 +158,8 @@
     height: 30px;
     flex-shrink: 0;
     @include mobile {
-      width: 3rem;
-      height: 3rem;
+      width: 4rem;
+      height: 4rem;
     }
     img {
       display: block;
@@ -175,10 +180,10 @@
     line-height: 1.2;
 
     @include mobile {
-      padding: 2.5rem;
-      padding-right: 5.5rem;
+      padding: 2rem 1.6rem;
       border-radius: 1.5rem;
-      font-size: 14px;
+      font-size: 16px;
+      line-height: 1.4;
     }
   }
 }

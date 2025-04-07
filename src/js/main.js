@@ -11,7 +11,6 @@ function checkResize() {
     window.innerHeight -
     header.offsetHeight -
     bottomForm.offsetHeight -
-    chatBottom.offsetHeight -
     90 +
     "px";
 }

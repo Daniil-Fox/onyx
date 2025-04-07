@@ -114,7 +114,8 @@
         gap: 10px;
       }
       @include mobile {
-        max-height: 8rem;
+        max-height: 10rem;
+        gap: 5px;
       }
     }
   }
@@ -197,9 +198,10 @@
     line-height: 1;
 
     @include mobile {
-      font-size: 1.5rem;
+      font-size: 13px;
       flex-direction: column;
       align-items: flex-start;
+      gap: 5px;
     }
   }
   &__logout {
