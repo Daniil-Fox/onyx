@@ -10,9 +10,6 @@
     @include small-tablet {
       align-items: center;
     }
-    @include mobile {
-      align-items: unset;
-    }
   }
 
   &__control {
@@ -86,8 +83,8 @@
     }
     @include mobile {
       max-width: 33.3%;
-      padding-top: 4rem;
-      gap: 1.5rem;
+      padding-top: 2rem;
+      gap: 1rem;
     }
   }
 
@@ -114,7 +111,7 @@
         gap: 10px;
       }
       @include mobile {
-        max-height: 10rem;
+        max-height: 8rem;
         gap: 5px;
       }
     }
@@ -150,7 +147,7 @@
     }
     @include mobile {
       max-width: 33.3%;
-      padding-top: 4rem;
+      padding-top: 3rem;
       padding-left: 2rem;
       padding-right: 0;
     }
@@ -225,7 +222,6 @@
       color: #fff;
       line-height: 1;
       @include mobile {
-        font-size: 1.3rem;
         display: block;
       }
     }
@@ -423,7 +419,7 @@
     line-height: 1;
     text-overflow: ellipsis;
     @include mobile {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
   }
 }
