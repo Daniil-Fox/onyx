@@ -12512,7 +12512,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper.use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Grid]);
-new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(".header__slider", {
+const params = {
   slidesPerView: 2,
   spaceBetween: 20,
   navigation: {
@@ -12533,7 +12533,13 @@ new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(".header__slider", {
       spaceBetween: 20
     }
   }
-});
+};
+let headerSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(".header__slider", params);
+if (window.matchMedia("(max-width: 900px)").matches) {
+  headerSlider.destroy();
+} else {
+  headerSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__.Swiper(".header__slider", params);
+}
 
 /***/ })
 

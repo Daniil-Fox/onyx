@@ -111,4 +111,7 @@ a {
   max-width: calc(1175px + (var(--container-offset) * 2));
   margin: 0 auto;
   padding: 50px var(--container-offset);
+  @include mobile {
+    padding-top: 2rem;
+  }
 }

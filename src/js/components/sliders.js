@@ -3,7 +3,7 @@ import { Grid, Navigation } from "swiper/modules";
 
 Swiper.use([Navigation, Grid]);
 
-new Swiper(".header__slider", {
+const params = {
   slidesPerView: 2,
   spaceBetween: 20,
   navigation: {
@@ -24,4 +24,12 @@ new Swiper(".header__slider", {
       spaceBetween: 20,
     },
   },
-});
+};
+
+let headerSlider = new Swiper(".header__slider", params);
+
+if (window.matchMedia("(max-width: 900px)").matches) {
+  headerSlider.destroy();
+} else {
+  headerSlider = new Swiper(".header__slider", params);
+}
