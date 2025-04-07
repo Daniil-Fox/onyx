@@ -12628,7 +12628,7 @@ const bottomForm = document.querySelector(".form");
 const chatBottom = document.querySelector(".chat__bottom");
 const mainChat = document.querySelector(".chat__body");
 function checkResize() {
-  mainChat.style.maxHeight = window.innerHeight - header.offsetHeight - bottomForm.offsetHeight - 90 + "px";
+  mainChat.style.maxHeight = window.innerHeight - header.offsetHeight - bottomForm.offsetHeight - chatBottom.offsetHeight - 90 + "px";
 }
 if (window.matchMedia("(max-width: 900px)").matches) {
   checkResize();
