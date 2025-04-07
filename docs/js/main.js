@@ -12623,6 +12623,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var simplebar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! simplebar */ "./node_modules/simplebar/dist/index.mjs");
 
 
+const header = document.querySelector(".header");
+const bottomForm = document.querySelector(".form");
+const chatBottom = document.querySelector(".chat__bottom");
+const mainChat = document.querySelector(".chat__body");
+function checkResize() {
+  mainChat.style.maxHeight = window.innerHeight - header.offsetHeight - bottomForm.offsetHeight - chatBottom.offsetHeight - 90 + "px";
+}
+if (window.matchMedia("(max-width: 900px)").matches) {
+  checkResize();
+  window.addEventListener("resize", checkResize);
+}
 })();
 
 /******/ })()
