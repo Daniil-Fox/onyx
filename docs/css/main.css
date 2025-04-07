@@ -986,8 +986,8 @@ a {
 @media (max-width: 650px) {
   .form {
     padding: 2rem 2rem;
-    padding-bottom: 1rem;
-    padding-right: 0.5rem;
+    padding-bottom: 0rem;
+    padding-right: 0rem;
   }
 }
 .form__area {
