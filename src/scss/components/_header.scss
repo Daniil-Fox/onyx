@@ -30,7 +30,10 @@
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
-
+    transition: background-color 0.3s ease-in;
+    @include hover {
+      background-color: #5a5a5a;
+    }
     @include small-tablet {
       left: unset;
       left: 50%;
@@ -138,15 +141,17 @@
     height: 26px;
     flex-shrink: 0;
     border-radius: 100%;
-    background-color: #2b2b2b;
-
+    background-color: #3c3b3b;
+    transition: background-color 0.3s ease-in;
+    @include hover {
+      background-color: #5a5a5a;
+    }
     @include small-tablet {
       position: absolute;
       right: 30%;
       top: 0;
       width: 30px;
       height: 30px;
-      background-color: #3c3b3b;
     }
     @include mobile {
       right: 3rem;
@@ -258,6 +263,11 @@
     justify-content: center;
     font-size: 24px;
     line-height: 1;
+
+    transition: background-color 0.3s ease-in;
+    @include hover {
+      background-color: #292929;
+    }
     @include mobile {
       font-size: 2.4rem;
       width: 3rem;
@@ -287,6 +297,11 @@
     gap: 10px;
     @include mobile {
       gap: 1rem;
+    }
+    @include hover {
+      .chats__name {
+        text-decoration: underline;
+      }
     }
     span:not(.chats__name) {
       width: 26px;
