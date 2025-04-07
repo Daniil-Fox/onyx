@@ -224,7 +224,7 @@ a {
   .header__reload {
     left: unset;
     left: 50%;
-    top: 0;
+    top: -7px;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -398,7 +398,7 @@ a {
   .header__plus {
     position: absolute;
     right: 30%;
-    top: 0;
+    top: -7px;
     width: 30px;
     height: 30px;
   }
@@ -408,6 +408,7 @@ a {
     right: 3rem;
     width: 3rem;
     height: 3rem;
+    font-size: 2.4rem;
   }
 }
 .header__text {

@@ -41,7 +41,7 @@
     @include small-tablet {
       left: unset;
       left: 50%;
-      top: 0;
+      top: -7px;
       transform: translateX(-50%);
     }
     @include mobile {
@@ -173,7 +173,7 @@
     @include small-tablet {
       position: absolute;
       right: 30%;
-      top: 0;
+      top: -7px;
       width: 30px;
       height: 30px;
     }
@@ -181,6 +181,7 @@
       right: 3rem;
       width: 3rem;
       height: 3rem;
+      font-size: 2.4rem;
     }
   }
 
