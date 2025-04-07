@@ -944,19 +944,15 @@ a {
   .chat__ava {
     width: 4rem;
     height: 4rem;
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
   }
 }
 .chat__ava img {
   display: block;
   width: 100%;
   height: 100%;
-}
-@media (max-width: 650px) {
-  .chat__ava img {
-    -webkit-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    transform: scale(1.4);
-  }
 }
 .chat__answer {
   padding: 25px;
