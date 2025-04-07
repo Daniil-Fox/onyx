@@ -208,7 +208,7 @@ img {
 }
 .header__reload {
   position: absolute;
-  bottom: 38px;
+  bottom: 45px;
   left: 15px;
   width: 30px;
   height: 30px;
@@ -509,6 +509,23 @@ img {
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
+  position: relative;
+}
+.header__img span {
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  text-align: center;
 }
 @media (max-width: 1200px) {
   .header__img {
