@@ -787,6 +787,11 @@ a {
   padding-top: 40px;
   margin-bottom: 23px;
 }
+@media (max-width: 650px) {
+  .chat__wrapper {
+    padding-top: 3rem;
+  }
+}
 .chat__wrapper::after {
   content: "";
   position: absolute;
@@ -801,7 +806,9 @@ a {
 }
 @media (max-width: 650px) {
   .chat__wrapper::after {
-    height: 9rem;
+    height: 5rem;
+    left: 0px;
+    right: 0px;
   }
 }
 .chat__body {
